@@ -66,7 +66,7 @@ execute this script in the right working directory.\e[0m"
 
 ## check if INSTALLDIR is part of PATH
 ## prompt user for action
-if [[ ! "$PATH" == ?(*:)"$INSTALLDIR"?(:*) ]]; then             
+if [ ! "$PATH" == ?(*:)"$INSTALLDIR"?(:*) ]; then             
   echo -e "$INFOMSG1"
   read INSTALLCHOICE
   if [[ "$INSTALLCHOICE" != "y" ]]; then
